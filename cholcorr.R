@@ -36,6 +36,8 @@ cholcorr<-function(cmatrix, obs=1000, seed=5, printit=TRUE,...){
 
 	}
 	else {
+	  	#the reason why I put "stop" here is because you want users to know that it is an error to not
+	  	#use an n X n matrix. 
 		stop("Correlation Matrix must be of dimensions n X n")
 	}
 
